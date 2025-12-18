@@ -9,6 +9,9 @@ import java.io.IOException;
 
 public class TSIDToStringSerializer extends JsonSerializer<TSID> {
 
+    /*
+     * Serializador para fazer a leitura do TSID para String.
+     * */
     @Override
     public void serialize(TSID value, JsonGenerator gen, SerializerProvider serializers) throws IOException {
         gen.writeString(value.toString());
